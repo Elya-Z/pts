@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'ptsblog.apps.PtsblogConfig'
+    'ptsblog.apps.PtsblogConfig',
+    'user.apps.UserConfig',
 ]
 
 MIDDLEWARE = [

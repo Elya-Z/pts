@@ -1,8 +1,9 @@
-{% extends "blog/base.html" %} {% block title %}{{ post.title }}{% endblock %}
+{% extends "blog/base.html" %} {% load static %} {% block title %}{{ post.title
+}}{% endblock %} {% block content %}
 <section class="random">
   <img
-    src="img/cover.png"
-    alt="Как принимать решения, когда ничего не понятно"
+    src="{% static 'img/cover.png' %}"
+    alt="{{post.title}}"
     class="random__img"
   />
   <div class="random__content">
@@ -14,3 +15,4 @@
     </div>
   </div>
 </section>
+{% endblock %}
