@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="{% static "css/style.min.css" %}" />
+    <title>Path to success</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" alt="logo" class="logo">
+          <img src="{% static "icons/logo.svg" %}" alt="" />
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list-item"><a href="#">Статьи</a></li>
+            <li class="nav__list-item"><a href="#">О нас</a></li>
+            <li class="nav__list-item"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main"></main>
+  </body>
+</html>
