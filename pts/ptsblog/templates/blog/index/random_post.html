@@ -1,21 +1,16 @@
+{% extends "blog/base.html" %} {% block title %}{{ post.title }}{% endblock %}
 <section class="random">
-    <img src="img/cover.png" alt="Как принимать решения, когда ничего не понятно" class="random__img" />
-    <div class="random__content">
-        <h2 class="title title_black">
-            Как принимать решения, когда ничего не понятно
-        </h2>
-        <div class="random__text">
-            Неопределённость — это ситуация, когда информации для принятия
-            решения либо очень мало, либо она очень быстро меняется.
-            Получается подвешенное состояние: решение принять сложно, потому
-            что непонятно, что из этого выйдет. Тут короче можно добавить еще
-            текста, что я и делаю, чтобы заполнить пустое пространство, и
-            вместо лорем ипсум я решил самому попечатать текст, т.к. у меня
-            ведь много времени, и много практики получа...
-        </div>
-        <div class="random__btns">
-            <button class="button">Читать статью</button>
-            <button class="button">Другая статья</button>
-        </div>
+  <img
+    src="img/cover.png"
+    alt="Как принимать решения, когда ничего не понятно"
+    class="random__img"
+  />
+  <div class="random__content">
+    <h2 class="title title_black">{{ post.title }}</h2>
+    <div class="random__text">{{post.text|truncatewords:418|linebreaks}}</div>
+    <div class="random__btns">
+      <button class="button">Читать статью</button>
+      <button class="button">Другая статья</button>
     </div>
+  </div>
 </section>
